@@ -13,4 +13,9 @@ public class PeldaController {
     public void deleteMore(@RequestBody ItemIds ids) {
         for(Integer i : ids.itemIds) {}
     }
+
+    @RequestMapping(value = "/test")
+    public String test() {
+        return "Its working!";
+    }
 }
